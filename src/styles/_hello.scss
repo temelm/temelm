@@ -1,0 +1,14 @@
+#hello {
+  background-color: $colorNewYorkPink;
+  color: #fff;
+}
+
+#hello h1 {
+  font-size: 40px;
+}
+
+@media screen and (min-width: $breakpointMd) {
+  #hello h1 {
+    font-size: 64px;
+  }
+}

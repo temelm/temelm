@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
+import Hello from './Hello'
 
 class App extends React.Component {
   constructor (props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
     return (
       <div id='app'>
         <Nav hamburgerToggle={hamburgerToggle} handleHamburgerToggle={this.handleHamburgerToggle} />
+        <Hello />
       </div>
     )
   }
