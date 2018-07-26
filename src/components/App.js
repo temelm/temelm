@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Hello from './Hello'
+import portfolioData from './portfolio-data'
 
 class App extends React.Component {
   constructor (props) {
