@@ -5,7 +5,7 @@ const Hello = (props) => {
     <section id='hello'>
       <div className='wrapper'>
         <h1>
-          🐳 👋 there 🤓
+          🐳 👋 there
         </h1>
       </div>
     </section>
