@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hello = (props) => {
+const Hello = () => {
   return (
     <section id='hello'>
       <div className='wrapper'>
