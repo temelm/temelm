@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import Hello from './Hello'
 import portfolioData from './portfolio-data'
+import Portfolio from './Portfolio'
 
 class App extends React.Component {
   constructor (props) {
@@ -24,6 +25,7 @@ class App extends React.Component {
       <div id='app'>
         <Nav hamburgerToggle={hamburgerToggle} handleHamburgerToggle={this.handleHamburgerToggle} />
         <Hello />
+        <Portfolio portfolioData={portfolioData} />
       </div>
     )
   }
