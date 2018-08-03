@@ -14,7 +14,8 @@ class App extends React.Component {
     this.handleHamburgerToggle = this.handleHamburgerToggle.bind(this)
   }
 
-  handleHamburgerToggle () {
+  handleHamburgerToggle (event) {
+    event.preventDefault()
     this.setState((prevState) => ({
       'hamburgerToggle': !prevState.hamburgerToggle
     }))
