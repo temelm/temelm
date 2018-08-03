@@ -1,12 +1,10 @@
 import React from 'react'
 
-const Hello = (props) => {
+const Hello = () => {
   return (
     <section id='hello'>
       <div className='wrapper'>
-        <h1>
-          🐳 👋 there
-        </h1>
+        <h1>🐳 👋 there</h1>
       </div>
     </section>
   )

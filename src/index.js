@@ -4,7 +4,8 @@ import App from './components/App'
 import './styles/index.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faAngular, faCss3Alt, faHtml5, faJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faBars)
+library.add(faBars, faAngular, faCss3Alt, faHtml5, faJs, faPhp, faReact)
 
 ReactDOM.render(<App />, document.getElementById('root'))
