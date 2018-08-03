@@ -1,0 +1,9 @@
+@import './portfolio-card';
+
+.portfolio-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing48;
+  margin-top: $spacing48;
+}
