@@ -6,7 +6,7 @@ const Nav = (props) => {
     <nav className='navbar'>
       <div className='wrapper'>
         <div className='navbar-hamburger'>
-          <a href='#hamburger' onClick={props.handleHamburgerToggle}>
+          <a href='#' onClick={props.handleHamburgerToggle}>
             <FontAwesomeIcon icon='bars' />
           </a>
         </div>
