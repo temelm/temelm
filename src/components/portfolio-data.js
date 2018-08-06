@@ -18,11 +18,18 @@ const portfolioData = [
     'tech': ['HTML', 'CSS', 'JavaScript', 'React'] /* Adobe Analytics, Adobe DTM, Tealium */
   },
   {
-    'title': 'Belsize Bathrooms',
-    'url': '//www.belsizebathrooms.co.uk',
-    'logo': belsizeBathrooms,
-    'role': ['Design', 'Front-end development', 'Back-end development'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'PHP']
+    'title': 'John Lewis',
+    'url': '//www.johnlewis.com',
+    'logo': johnLewis,
+    'role': ['A/B and multivariate testing'],
+    'tech': ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    'title': 'National Rail Enquiries',
+    'url': '//www.nationalrail.co.uk',
+    'logo': nationalRailEnquiries,
+    'role': ['A/B and multivariate testing', 'Front-end development'],
+    'tech': ['HTML', 'CSS', 'JavaScript']
   },
   {
     'title': 'British Airways',
@@ -39,9 +46,9 @@ const portfolioData = [
     'tech': ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'Energy Helpline',
-    'url': '//www.energyhelpline.com', /* Redirects to https://www.energyhelpline.com/fri/ */
-    'logo': energyHelpline,
+    'title': 'Thomas Cook',
+    'url': '//www.thomascook.com',
+    'logo': thomasCook,
     'role': ['A/B and multivariate testing'],
     'tech': ['HTML', 'CSS', 'JavaScript', 'Angular']
   },
@@ -53,25 +60,18 @@ const portfolioData = [
     'tech': ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'John Lewis',
-    'url': '//www.johnlewis.com',
-    'logo': johnLewis,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
-  },
-  {
-    'title': 'National Rail Enquiries',
-    'url': '//www.nationalrail.co.uk',
-    'logo': nationalRailEnquiries,
-    'role': ['A/B and multivariate testing', 'Front-end development'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
-  },
-  {
-    'title': 'Thomas Cook',
-    'url': '//www.thomascook.com',
-    'logo': thomasCook,
+    'title': 'Energy Helpline',
+    'url': '//www.energyhelpline.com', /* Redirects to https://www.energyhelpline.com/fri/ */
+    'logo': energyHelpline,
     'role': ['A/B and multivariate testing'],
     'tech': ['HTML', 'CSS', 'JavaScript', 'Angular']
+  },
+  {
+    'title': 'Belsize Bathrooms',
+    'url': '//www.belsizebathrooms.co.uk',
+    'logo': belsizeBathrooms,
+    'role': ['Design', 'Front-end development', 'Back-end development'],
+    'tech': ['HTML', 'CSS', 'JavaScript', 'PHP']
   },
   {
     'title': 'tint',
