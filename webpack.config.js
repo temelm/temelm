@@ -40,7 +40,8 @@ module.exports = {
       'template': './src/index.html',
       'minify': {
         'collapseWhitespace': true
-      }
+      },
+      'favicon': './src/images/favicon.ico'
     }),
     new MiniCssExtractPlugin({
       'filename': 'bundle.css'
