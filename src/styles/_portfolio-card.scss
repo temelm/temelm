@@ -1,12 +1,15 @@
 @import './tech';
 
+$spacing10: 10px;
+$spacing20: 20px;
+
 .portfolio-card {
-  background-color: #fff;
+  background-color: $colorWhite;
   display: flex;
   flex-direction: column;
   font-size: smaller;
-  margin-bottom: 20px;
-  max-width: 320px;
+  margin-bottom: $spacing20;
+  max-width: $baseWidth;
 }
 
 .portfolio-card:last-child {
@@ -14,7 +17,7 @@
 }
 
 .portfolio-card-logo {
-  margin-bottom: -4px; /* 🐵 patch */
+  margin-bottom: -3px; /* 🐵 patch */
 
   img {
     width: 100%;
@@ -22,18 +25,18 @@
 }
 
 .portfolio-card-body {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $spacing20;
+  padding-right: $spacing20;
 }
 
 .portfolio-card-details {
-  margin-bottom: 10px;
+  margin-bottom: $spacing10;
 }
 
 .portfolio-card-role {
   ul {
     list-style-type: square;
-    padding-left: 20px;
+    padding-left: $spacing20;
   }
 }
 
@@ -44,29 +47,29 @@
 
 .tech {
   flex-grow: 1;
-  margin-bottom: 10px;
+  margin-bottom: $spacing10;
   width: 50%;
 
   svg {
-    margin-right: 10px;
+    margin-right: $spacing10;
   }
 }
 
 .portfolio-card-cta {
-  margin-bottom: 20px;
+  margin-bottom: $spacing20;
   text-align: center;
 
   a {
     border: 1px solid $colorSurfieGreen;
     display: inline-block;
     color: $colorSurfieGreen;
-    padding: 10px 20px;
+    padding: $spacing10 $spacing20;
     text-decoration: none;
   }
 
   a:hover {
     background-color: $colorSurfieGreen;
-    color: #fff;
+    color: $colorWhite;
   }
 }
 
@@ -84,7 +87,7 @@
 
   .portfolio-card-logo {
     img {
-      max-width: 320px;
+      max-width: $baseWidth;
     }
   }
 
@@ -127,7 +130,7 @@
   .portfolio-card-cta {
     margin-bottom: 0;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: $spacing20;
+    top: $spacing20;
   }
 }

@@ -11,7 +11,7 @@
   }
 
   a {
-    color: #fff;
+    color: $colorWhite;
     display: inline-block;
     font-weight: bold;
     padding: $spacing16 0;
@@ -50,7 +50,7 @@
 
 .navbar-links.expanded {
   background-color: $colorSurfieGreen;
-  bottom: 50px;
+  bottom: $navbarHeight;
   display: flex;
   flex-direction: column-reverse;
   height: 100%;

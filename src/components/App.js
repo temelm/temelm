@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import Hello from './Hello'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 import portfolioData from './portfolio-data'
 
@@ -28,6 +29,7 @@ class App extends React.Component {
         <Nav hamburgerToggle={hamburgerToggle} handleHamburgerToggle={this.handleHamburgerToggle} />
         <Hello />
         <Portfolio portfolioData={portfolioData} />
+        <Contact />
       </div>
     )
   }
