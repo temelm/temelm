@@ -1,17 +1,27 @@
 $breakpointMd: 768px;
 
 $colorFloralWhite: #fffaf0;
+$colorMineShaft: #333;
 $colorNewYorkPink: #d37c71;
+$colorRaffia: #e9dcb5;
 $colorSandyBrown: #f79f66;
 $colorSurfieGreen: #0d7e83;
+$colorWhite: #fff;
 
 $spacing16: 16px;
+$spacing32: 32px;
 $spacing48: 48px;
+$spacing64: 64px;
+
+$baseWidth: 320px;
+
+$navbarHeight: 50px;
 
 body {
-  color: #333;
+  color: $colorMineShaft;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
+  min-width: $baseWidth;
 }
 
 .wrapper {
@@ -20,14 +30,18 @@ body {
 }
 
 section {
-  padding-bottom: $spacing48;
-  padding-top: $spacing48;
+  padding-bottom: $spacing32;
+  padding-top: $spacing32;
+}
+
+section:last-child {
+  margin-bottom: $navbarHeight;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: $spacing32;
   line-height: 1;
-  margin: 0;
+  margin: 0 0 $spacing32 0;
   text-align: center;
 }
 
@@ -49,7 +63,13 @@ h4 {
     max-width: $breakpointMd;
   }
 
+  section {
+    padding-bottom: $spacing48;
+    padding-top: $spacing48;
+  }
+
   h1 {
-    font-size: 48px;
+    font-size: $spacing48;
+    margin-bottom: $spacing48;
   }
 }

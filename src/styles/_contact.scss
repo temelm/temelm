@@ -1,0 +1,30 @@
+#contact {
+  background-color: $colorRaffia;
+  text-align: center;
+}
+
+.social-stack {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $baseWidth;
+}
+
+.social {
+  flex: 1;
+  font-size: xx-large;
+}
+
+.social-github a {
+  color: #333;
+}
+
+.social-linkedin a {
+  color: #00a0dc;
+}
+
+.copyright {
+  font-size: small;
+  margin-top: $spacing48;
+  opacity: 0.5;
+}
