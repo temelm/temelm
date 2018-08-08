@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Nav = (props) => {
   return (
@@ -13,10 +14,10 @@ const Nav = (props) => {
         <div className={['navbar-links', ((props.hamburgerToggle) ? ' expanded' : '')].join('')}>
           <ul>
             <li>
-              <a href='#portfolio'>Portfolio</a>
+              <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
             </li>
             <li>
-              <a href='#contact'>Contact</a>
+              <AnchorLink href='#contact'>Contact</AnchorLink>
             </li>
           </ul>
         </div>
