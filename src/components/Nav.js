@@ -19,6 +19,9 @@ const Nav = (props) => {
             <li>
               <AnchorLink href='#contact'>Contact</AnchorLink>
             </li>
+            <li>
+              <a href='cv.pdf' target='_blank'>CV</a>
+            </li>
           </ul>
         </div>
         <div className='navbar-brand'>

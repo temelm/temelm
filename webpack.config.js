@@ -47,10 +47,17 @@ module.exports = {
     new MiniCssExtractPlugin({
       'filename': 'bundle.css'
     }),
-    new CopyWebpackPlugin([{
+    new CopyWebpackPlugin([
+      {
       'from': './src/server/mail.php',
       'to': './mail.php',
       'toType': 'file'
-    }])
+      },
+      {
+        'from': './src/cv.pdf',
+        'to': './cv.pdf',
+        'toType': 'file'
+      }
+    ])
   ]
 }
