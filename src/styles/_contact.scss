@@ -1,3 +1,5 @@
+@import './contact-form';
+
 #contact {
   background-color: $colorRaffia;
   text-align: center;
@@ -25,6 +27,12 @@
 
 .copyright {
   font-size: small;
-  margin-top: $spacing48;
+  margin-top: $spacing32;
   opacity: 0.5;
+}
+
+@media screen and (min-width: $breakpointMd) {
+  .copyright {
+    margin-top: $spacing48;
+  }
 }
