@@ -1,15 +1,16 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-/**
- * Add <div className='contact-email'></div>
- */
-
-const Contact = () => {
+const Contact = (props) => {
   return (
     <section id='contact'>
       <div className='wrapper'>
         <h1>Contact</h1>
+        <ContactForm
+          contactFormSubmitDisabled={props.contactFormSubmitDisabled}
+          handleContactFormSubmit={props.handleContactFormSubmit}
+        />
         <div className='contact-social'>
           <div className='social-stack'>
             <div className='social social-github'>

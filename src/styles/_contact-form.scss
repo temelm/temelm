@@ -1,0 +1,66 @@
+.contact-form {
+  margin-bottom: $spacing32;
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $baseWidth;
+  }
+}
+
+.form-field {
+  margin-bottom: calc(#{$spacing16} / 2);
+}
+
+#name, #email, #message {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: $colorMineShaft;
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  padding: calc(#{$spacing16} / 2);
+  width: 100%;
+}
+
+#message {
+  resize: none;
+}
+
+#send {
+  background-color: $colorWhite;
+  border: 1px solid #ccc;
+  color: $colorMineShaft;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  padding: calc(#{$spacing16} / 2) $spacing48;
+}
+
+#send[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: $breakpointMd) {
+  .contact-form {
+    margin-bottom: $spacing48;
+  }
+  
+  .form-field {
+    margin-bottom: $spacing16;
+  }
+
+  #send {
+    transition: all 0.1s linear;
+  }
+
+  #send:hover {
+    border-color: $colorSurfieGreen;
+    transform: scale(1.1);
+  }
+
+  #send[disabled]:hover {
+    border-color: #ccc;
+    transform: scale(1);
+  }
+}

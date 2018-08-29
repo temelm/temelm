@@ -132,5 +132,13 @@ $spacing20: 20px;
     position: absolute;
     right: $spacing20;
     top: $spacing20;
+
+    a {
+      transition: all 0.1s linear;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+    }
   }
 }
