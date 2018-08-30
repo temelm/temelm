@@ -20,7 +20,7 @@ const Nav = (props) => {
               <AnchorLink href='#contact'>Contact</AnchorLink>
             </li>
             <li>
-              <a href='cv.pdf' target='_blank'>CV</a>
+              <a href='cv.pdf' target='_blank' title='Opens in a new tab'>CV</a>
             </li>
           </ul>
         </div>
