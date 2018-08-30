@@ -5,7 +5,7 @@ const PortfolioCard = (props) => {
   return (
     <div className='portfolio-card'>
       <div className='portfolio-card-logo'>
-        <a href={props.url} target='_blank'>
+        <a href={props.url} target='_blank' title='Opens in a new tab'>
           <img src={props.logo} alt={props.title} />
         </a>
       </div>
@@ -28,7 +28,7 @@ const PortfolioCard = (props) => {
           </div>
         </div>
         <div className='portfolio-card-cta'>
-          <a href={props.url} target='_blank'>Visit site</a>
+          <a href={props.url} target='_blank' title='Opens in a new tab'>Visit site</a>
         </div>
       </div>
     </div>
