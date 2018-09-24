@@ -52,11 +52,6 @@ module.exports = {
       'from': './src/server/mail.php',
       'to': './mail.php',
       'toType': 'file'
-      },
-      {
-        'from': './src/cv.pdf',
-        'to': './cv.pdf',
-        'toType': 'file'
       }
     ])
   ]
