@@ -51,7 +51,8 @@ const portfolioData = [
     'url': '//www.eurostar.com',
     'logo': eurostar,
     'role': ['Analytics implementation', 'A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'React'] /* Google Analytics, Google Tag Manager, Tealium */
+    'tech': ['HTML', 'CSS', 'JavaScript', 'React'], /* Google Analytics, Google Tag Manager, Tealium */
+    'isPrimary': true
   },
   {
     'title': 'Thomas Cook',

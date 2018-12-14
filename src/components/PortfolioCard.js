@@ -3,7 +3,7 @@ import Tech from './Tech'
 
 const PortfolioCard = (props) => {
   return (
-    <div className='portfolio-card'>
+    <div className={`portfolio-card${(props.isPrimary) ? ' primary' : ''}`}>
       <div className='portfolio-card-logo'>
         <a href={props.url} target='_blank' title='Opens in a new tab'>
           <img src={props.logo} alt={props.title} />
