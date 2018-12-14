@@ -10,15 +10,10 @@ $spacing20: 20px;
   font-size: smaller;
   margin-bottom: $spacing20;
   max-width: $baseWidth;
-  order: 4;
 }
 
 .portfolio-card:last-child {
   margin-bottom: 0;
-}
-
-.portfolio-card.primary {
-  order: 1;
 }
 
 .portfolio-card-logo {
