@@ -91,4 +91,8 @@ const portfolioData = [
   }
 ]
 
+const primaryIndex = portfolioData.findIndex(item => item.isPrimary)
+const primary = portfolioData.splice(primaryIndex, 1)[0]
+portfolioData.unshift(primary)
+
 export default portfolioData
