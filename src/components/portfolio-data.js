@@ -3,6 +3,7 @@ import belsizeBathrooms from '../images/belsize-bathrooms.png'
 import britishAirways from '../images/british-airways.jpg'
 import ebuyer from '../images/ebuyer.jpg'
 import energyHelpline from '../images/energy-helpline.jpg'
+import eurostar from '../images/eurostar.jpg'
 import heathrowExpress from '../images/heathrow-express.jpg'
 import johnLewis from '../images/john-lewis.gif'
 import nationalRailEnquiries from '../images/national-rail-enquiries.jpg'
@@ -44,6 +45,13 @@ const portfolioData = [
     'logo': ebuyer,
     'role': ['A/B and multivariate testing'],
     'tech': ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    'title': 'Eurostar',
+    'url': '//www.eurostar.com',
+    'logo': eurostar,
+    'role': ['Analytics implementation', 'A/B and multivariate testing'],
+    'tech': ['HTML', 'CSS', 'JavaScript', 'React'] /* Google Analytics, Google Tag Manager, Tealium */
   },
   {
     'title': 'Thomas Cook',
