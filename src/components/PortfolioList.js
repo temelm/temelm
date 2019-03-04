@@ -2,9 +2,10 @@ import React from 'react'
 import PortfolioCard from './PortfolioCard'
 
 const PortfolioList = (props) => {
+  const { portfolioData } = props
   return (
     <div className='portfolio-list'>
-      {props.portfolioData.map((item, index) => <PortfolioCard key={index} {...item} />)}
+      {portfolioData.map(item => <PortfolioCard key={item.key} {...item} />)}
     </div>
   )
 }

@@ -1,4 +1,81 @@
-@import './common';
+$baseWidth: 320px;
+$breakpointMd: 768px;
+$navbarHeight: 50px;
+
+$spacingXxs: calc(#{$baseWidth} / 40);           /* 8px */
+$spacingXs: calc(#{$baseWidth} / 20);            /* 16px */
+$spacingSm: calc(#{$spacingXs} * 2);             /* 32px */
+$spacingMd: calc(#{$spacingXs} + #{$spacingSm}); /* 48px */
+$spacingLg: calc(#{$spacingXs} * 4);             /* 64px */
+
+$colorTemFontDark: #333;
+$colorTemFormFieldBorder: #ccc;
+$colorTemTeal: #0d7e83;
+$colorWhite: #fff;
+
+$fontFamily: "Inconsolata", monospace;
+
+body {
+  color: $colorTemFontDark;
+  font-family: $fontFamily;
+  margin: 0;
+  min-width: $baseWidth;
+}
+
+.wrapper {
+  padding-left: $spacingXs;
+  padding-right: $spacingXs;
+}
+
+section {
+  padding-bottom: $spacingSm;
+  padding-top: $spacingSm;
+}
+
+section:last-child {
+  margin-bottom: $navbarHeight;
+}
+
+h1 {
+  font-size: $spacingSm;
+  line-height: 1;
+  margin: 0 0 $spacingSm 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+h4 {
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: $breakpointMd) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $breakpointMd;
+  }
+
+  section {
+    padding-bottom: $spacingMd;
+    padding-top: $spacingMd;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: $spacingMd;
+    margin-bottom: $spacingMd;
+  }
+}
+
 @import './nav';
 @import './hello';
 @import './portfolio';

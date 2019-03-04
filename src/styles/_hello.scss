@@ -1,22 +1,23 @@
 #hello {
-  background-color: $colorNewYorkPink;
+  background-color: #d37c71;
   color: $colorWhite;
-  padding-bottom: $spacing48;
-  padding-top: $spacing48;
+  padding-bottom: $spacingMd;
+  padding-top: $spacingMd;
 
   h1 {
-    font-size: $spacing48;
+    font-size: $spacingMd;
     margin: 0;
   }
 }
 
 @media screen and (min-width: $breakpointMd) {
   #hello {
-    padding-bottom: $spacing64;
-    padding-top: $spacing64;
+    margin-top: $navbarHeight;
+    padding-bottom: $spacingLg;
+    padding-top: $spacingLg;
 
     h1 {
-      font-size: $spacing64;
+      font-size: $spacingLg;
     }
   }
 }

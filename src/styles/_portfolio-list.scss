@@ -1,7 +1,7 @@
-@import './portfolio-card';
-
 .portfolio-list {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+
+@import './portfolio-card';

@@ -1,31 +1,36 @@
 import React from 'react'
-import ContactForm from './ContactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ContactForm from './ContactForm'
 
 const Contact = (props) => {
+  const { contactFormSubmitDisabled, handleContactFormSubmit } = props
   return (
     <section id='contact'>
       <div className='wrapper'>
         <h1>Contact</h1>
         <ContactForm
-          contactFormSubmitDisabled={props.contactFormSubmitDisabled}
-          handleContactFormSubmit={props.handleContactFormSubmit}
+          contactFormSubmitDisabled={contactFormSubmitDisabled}
+          handleContactFormSubmit={handleContactFormSubmit}
         />
         <div className='contact-social'>
           <div className='social-stack'>
             <div className='social social-github'>
-              <a href='//github.com/temelm' target='_blank'>
+              <a href='//github.com/temelm' target='blank' rel='noopener'>
                 <FontAwesomeIcon icon={['fab', 'github']} fixedWidth size='lg' spin />
               </a>
             </div>
             <div className='social social-linkedin'>
-              <a href='//www.linkedin.com/in/mustafa-temel-b3908b2a' target='_blank'>
+              <a href='//www.linkedin.com/in/mustafa-temel-b3908b2a' target='blank' rel='noopener'>
                 <FontAwesomeIcon icon={['fab', 'linkedin-in']} fixedWidth size='lg' spin />
               </a>
             </div>
           </div>
         </div>
-        <div className='copyright'>©️ 2018 Mustafa Temel</div>
+        <div className='copyright'>
+          <span role='img' aria-label='Copyright'>©️</span>
+          {' '}
+          2019 Mustafa Temel
+        </div>
       </div>
     </section>
   )

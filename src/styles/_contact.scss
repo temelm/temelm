@@ -1,7 +1,5 @@
-@import './contact-form';
-
 #contact {
-  background-color: $colorRaffia;
+  background-color: #e9dcb5;
   text-align: center;
 }
 
@@ -27,12 +25,14 @@
 
 .copyright {
   font-size: small;
-  margin-top: $spacing32;
+  margin-top: $spacingSm;
   opacity: 0.5;
 }
 
 @media screen and (min-width: $breakpointMd) {
   .copyright {
-    margin-top: $spacing48;
+    margin-top: $spacingMd;
   }
 }
+
+@import './contact-form';

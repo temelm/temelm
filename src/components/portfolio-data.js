@@ -12,82 +12,83 @@ import tint from '../images/tint.png'
 
 const portfolioData = [
   {
-    'title': 'Argos',
-    'url': '//www.argos.co.uk',
-    'logo': argos,
-    'role': ['Analytics implementation', 'A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'React'] /* Adobe Analytics, Adobe DTM, Tealium */
+    title: 'Argos',
+    url: '//www.argos.co.uk',
+    logo: argos,
+    role: ['Analytics implementation', 'A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React'] /* Adobe Analytics, Adobe DTM, Tealium */
   },
   {
-    'title': 'John Lewis',
-    'url': '//www.johnlewis.com',
-    'logo': johnLewis,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
+    title: 'John Lewis',
+    url: '//www.johnlewis.com',
+    logo: johnLewis,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'National Rail Enquiries',
-    'url': '//www.nationalrail.co.uk',
-    'logo': nationalRailEnquiries,
-    'role': ['A/B and multivariate testing', 'Front-end development'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
+    title: 'National Rail Enquiries',
+    url: '//www.nationalrail.co.uk',
+    logo: nationalRailEnquiries,
+    role: ['A/B and multivariate testing', 'Front-end development'],
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'British Airways',
-    'url': '//www.britishairways.com/travel/home/public/en_gb', /* Redirects to https://www.britishairways.com/en-gb/home#/ */
-    'logo': britishAirways,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
+    title: 'British Airways',
+    url: '//www.britishairways.com/travel/home/public/en_gb',
+    logo: britishAirways,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'Ebuyer',
-    'url': '//www.ebuyer.com',
-    'logo': ebuyer,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
+    title: 'Ebuyer',
+    url: '//www.ebuyer.com',
+    logo: ebuyer,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'Eurostar',
-    'url': '//www.eurostar.com',
-    'logo': eurostar,
-    'role': ['Analytics implementation', 'A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'React'], /* Google Analytics, Google Tag Manager, Tealium */
-    'isPrimary': true
+    title: 'Eurostar',
+    url: '//www.eurostar.com',
+    logo: eurostar,
+    role: ['Analytics implementation', 'A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React'], /* Google Analytics, Google Tag Manager, Tealium */
+    isPrimary: true,
+    isContract: true
   },
   {
-    'title': 'Thomas Cook',
-    'url': '//www.thomascook.com',
-    'logo': thomasCook,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'Angular']
+    title: 'Thomas Cook',
+    url: '//www.thomascook.com',
+    logo: thomasCook,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'Angular']
   },
   {
-    'title': 'Heathrow Express',
-    'url': '//www.heathrowexpress.com',
-    'logo': heathrowExpress,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript']
+    title: 'Heathrow Express',
+    url: '//www.heathrowexpress.com',
+    logo: heathrowExpress,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    'title': 'Energy Helpline',
-    'url': '//www.energyhelpline.com', /* Redirects to https://www.energyhelpline.com/fri/ */
-    'logo': energyHelpline,
-    'role': ['A/B and multivariate testing'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'Angular']
+    title: 'Energy Helpline',
+    url: '//www.energyhelpline.com', /* Redirects to https://www.energyhelpline.com/fri/ */
+    logo: energyHelpline,
+    role: ['A/B and multivariate testing'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'Angular']
   },
   {
-    'title': 'Belsize Bathrooms',
-    'url': '//www.belsizebathrooms.co.uk',
-    'logo': belsizeBathrooms,
-    'role': ['Design', 'Front-end development', 'Back-end development'],
-    'tech': ['HTML', 'CSS', 'JavaScript', 'PHP']
+    title: 'Belsize Bathrooms',
+    url: '//www.belsizebathrooms.co.uk',
+    logo: belsizeBathrooms,
+    role: ['Design', 'Front-end development', 'Back-end development'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'PHP']
   },
   {
-    'title': 'tint',
-    'url': '//play.google.com/store/apps/details?id=com.temelm.tint',
-    'logo': tint,
-    'role': ['Design', 'Hybrid mobile app development'],
-    'tech': ['HTML', 'CSS', 'JavaScript'] /* Adobe PhoneGap */
+    title: 'tint',
+    url: '//play.google.com/store/apps/details?id=com.temelm.tint',
+    logo: tint,
+    role: ['Design', 'Hybrid mobile app development'],
+    tech: ['HTML', 'CSS', 'JavaScript'] /* Adobe PhoneGap */
   }
 ]
 
@@ -95,4 +96,11 @@ const primaryIndex = portfolioData.findIndex(item => item.isPrimary)
 const primary = portfolioData.splice(primaryIndex, 1)[0]
 portfolioData.unshift(primary)
 
-export default portfolioData
+const portfolioDataWithKeys = portfolioData.map((item, index) => {
+  const currentItem = { ...item, key: index }
+  currentItem.role = currentItem.role.map((currentRole, roleIndex) => ({ value: currentRole, key: roleIndex }))
+  currentItem.tech = currentItem.tech.map((currentTech, techIndex) => ({ value: currentTech, key: techIndex }))
+  return currentItem
+})
+
+export default portfolioDataWithKeys

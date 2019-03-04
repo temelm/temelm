@@ -1,24 +1,24 @@
 .contact-form {
-  margin-bottom: $spacing32;
+  margin-bottom: $spacingSm;
 
   form {
     margin-left: auto;
     margin-right: auto;
-    max-width: $baseWidth;
+    max-width: calc(#{$baseWidth} * 1.25);
   }
 }
 
 .form-field {
-  margin-bottom: calc(#{$spacing16} / 2);
+  margin-bottom: $spacingXxs;
 }
 
 #name, #email, #message {
-  border: 1px solid #ccc;
+  border: 1px solid $colorTemFormFieldBorder;
   box-sizing: border-box;
-  color: $colorMineShaft;
-  font-family: "Ubuntu", sans-serif;
+  color: $colorTemFontDark;
+  font-family: $fontFamily;
   font-size: large;
-  padding: calc(#{$spacing16} / 2);
+  padding: $spacingXxs;
   width: 100%;
 }
 
@@ -28,12 +28,12 @@
 
 #send {
   background-color: $colorWhite;
-  border: 1px solid #ccc;
-  color: $colorMineShaft;
+  border: 1px solid $colorTemFormFieldBorder;
+  color: $colorTemFontDark;
   cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
+  font-family: $fontFamily;
   font-size: large;
-  padding: calc(#{$spacing16} / 2) $spacing48;
+  padding: $spacingXxs $spacingMd;
 }
 
 #send[disabled] {
@@ -43,11 +43,11 @@
 
 @media screen and (min-width: $breakpointMd) {
   .contact-form {
-    margin-bottom: $spacing48;
+    margin-bottom: $spacingMd;
   }
   
   .form-field {
-    margin-bottom: $spacing16;
+    margin-bottom: $spacingXs;
   }
 
   #send {
@@ -55,12 +55,12 @@
   }
 
   #send:hover {
-    border-color: $colorSurfieGreen;
+    border-color: $colorTemTeal;
     transform: scale(1.1);
   }
 
   #send[disabled]:hover {
-    border-color: #ccc;
+    border-color: $colorTemFormFieldBorder;
     transform: scale(1);
   }
 }

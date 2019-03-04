@@ -2,8 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Tech = (props) => {
-  const techName = props.name
-  const className = techName.toLowerCase()
+  const { name } = props
+  const className = name.toLowerCase()
   let iconName = ''
   switch (className) {
     case 'angular':
@@ -24,11 +24,14 @@ const Tech = (props) => {
     case 'react':
       iconName = 'react'
       break
+    default:
+      iconName = ''
+      break
   }
   return (
     <div className='tech'>
       <FontAwesomeIcon icon={['fab', iconName]} fixedWidth size='lg' className={`tech-${className}`} />
-      {techName}
+      {name}
     </div>
   )
 }

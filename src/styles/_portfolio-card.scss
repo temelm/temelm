@@ -1,5 +1,3 @@
-@import './tech';
-
 $spacing10: 10px;
 $spacing20: 20px;
 
@@ -27,6 +25,15 @@ $spacing20: 20px;
 .portfolio-card-body {
   padding-left: $spacing20;
   padding-right: $spacing20;
+}
+
+.portfolio-card-title {
+  h2 {
+    span {
+      font-size: small;
+      opacity: 0.75;
+    }
+  }
 }
 
 .portfolio-card-details {
@@ -60,15 +67,15 @@ $spacing20: 20px;
   text-align: center;
 
   a {
-    border: 1px solid $colorSurfieGreen;
+    border: 1px solid $colorTemTeal;
     display: inline-block;
-    color: $colorSurfieGreen;
+    color: $colorTemTeal;
     padding: $spacing10 $spacing20;
     text-decoration: none;
   }
 
   a:hover {
-    background-color: $colorSurfieGreen;
+    background-color: $colorTemTeal;
     color: $colorWhite;
   }
 }
@@ -102,6 +109,10 @@ $spacing20: 20px;
     align-items: center;
     display: flex;
     flex-grow: 1;
+    
+    h2 {
+      font-weight: 700;
+    }
   }
 
   .portfolio-card-details {
@@ -142,3 +153,5 @@ $spacing20: 20px;
     }
   }
 }
+
+@import './tech';
