@@ -15,10 +15,10 @@ const Nav = (props) => {
         <div className={['navbar-links', (hamburgerToggle ? ' expanded' : '')].join('')}>
           <ul>
             <li>
-              <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink href='#portfolio' onClick={handleHamburgerToggle}>Portfolio</AnchorLink>
             </li>
             <li>
-              <AnchorLink href='#contact'>Contact</AnchorLink>
+              <AnchorLink href='#contact' onClick={handleHamburgerToggle}>Contact</AnchorLink>
             </li>
           </ul>
         </div>
