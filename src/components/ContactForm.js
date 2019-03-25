@@ -12,7 +12,10 @@ const ContactForm = (props) => {
           <input type='email' name='email' id='email' placeholder='Your email' required />
         </div>
         <div className='form-field'>
-          <textarea name='message' id='message' rows='8' placeholder='Your message' required />
+          <input type='text' name='company' id='company' placeholder='Your company (optional)' />
+        </div>
+        <div className='form-field'>
+          <textarea name='message' id='message' rows='12' placeholder='Your message' required />
         </div>
         <div className='form-submit'>
           <button type='submit' id='send' disabled={contactFormSubmitDisabled}>Send</button>
