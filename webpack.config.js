@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
@@ -46,11 +47,17 @@ module.exports = (env) => {
           removeScriptTypeAttributes: true,
           removeStyleLinkTypeAttributes: true,
           useShortDoctype: true
-        }
+        },
+        favicon: './src/images/favicon.ico'
       }),
       new MiniCssExtractPlugin({
         filename: 'bundle.css'
-      })
+      }),
+      new CopyWebpackPlugin([{
+        from: './src/server/mail.php',
+        to: './mail.php',
+        toType: 'file'
+      }])
     ],
     optimization: {
       minimizer: [
