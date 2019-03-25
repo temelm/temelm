@@ -5,7 +5,7 @@ $spacing20: 20px;
   background-color: $colorWhite;
   display: flex;
   flex-direction: column;
-  font-size: smaller;
+  font-size: large;
   margin-bottom: $spacing20;
   max-width: $baseWidth;
 }
@@ -83,7 +83,6 @@ $spacing20: 20px;
 @media screen and (min-width: $breakpointMd) {
   .portfolio-card {
     flex-direction: row;
-    font-size: medium;
     max-width: 100%;
     width: 100%;
   }
