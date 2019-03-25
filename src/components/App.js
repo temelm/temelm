@@ -17,8 +17,18 @@ class App extends React.Component {
       notificationType: '',
       notificationMessage: ''
     }
+    this.setNotification = this.setNotification.bind(this)
     this.handleHamburgerToggle = this.handleHamburgerToggle.bind(this)
     this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this)
+    this.handleNotificationDismiss = this.handleNotificationDismiss.bind(this)
+  }
+
+  setNotification (display, type, message) {
+    this.setState({
+      displayNotification: display,
+      notificationType: type,
+      notificationMessage: message
+    })
   }
 
   handleHamburgerToggle (event) {
@@ -40,33 +50,27 @@ class App extends React.Component {
     }).then(response => response.text()).then((text) => {
       if (text === 'success') {
         contactForm.reset()
-        this.setState({
-          displayNotification: true,
-          notificationType: 'success',
-          notificationMessage: 'Sent.'
-        })
+        this.setNotification(true, 'success', 'Sent.')
       } else {
-        this.setState({
-          displayNotification: true,
-          notificationType: 'error',
-          notificationMessage: 'Your message was not sent. Please try again.'
-        })
+        this.setNotification(true, 'error', 'Your message was not sent. Please try again.')
       }
       setTimeout(() => {
         this.setState({
           contactFormSubmitDisabled: false
         })
       }, 1000)
-      setTimeout(() => {
-        this.setState({
-          displayNotification: false,
-          notificationType: '',
-          notificationMessage: ''
-        })
-      }, 8000)
+      window.notificationTimeout = setTimeout(() => {
+        this.setNotification(false, '', '')
+      }, 10000)
     }).catch((error) => {
       console.error(error) // eslint-disable-line no-console
     })
+  }
+
+
+  handleNotificationDismiss (event) {
+    event.preventDefault()
+    this.setNotification(false, '', '')
   }
 
   render () {
@@ -82,7 +86,13 @@ class App extends React.Component {
           contactFormSubmitDisabled={contactFormSubmitDisabled}
           handleContactFormSubmit={this.handleContactFormSubmit}
         />
-        {displayNotification && <Notification type={notificationType} message={notificationMessage} />}
+        {displayNotification && (
+          <Notification
+            type={notificationType}
+            message={notificationMessage}
+            handleNotificationDismiss={this.handleNotificationDismiss}
+          />
+        )}
       </div>
     )
   }
