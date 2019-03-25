@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Nav = (props) => {
-  const { handleHamburgerToggle, hamburgerToggle } = props
+  const { hamburgerToggle, setHamburgerToggle, handleHamburgerToggle } = props
   return (
     <nav className='navbar'>
       <div className='wrapper'>
@@ -15,10 +15,10 @@ const Nav = (props) => {
         <div className={['navbar-links', (hamburgerToggle ? ' expanded' : '')].join('')}>
           <ul>
             <li>
-              <AnchorLink href='#portfolio' onClick={handleHamburgerToggle}>Portfolio</AnchorLink>
+              <AnchorLink href='#portfolio' onClick={() => { setHamburgerToggle(false) }}>Portfolio</AnchorLink>
             </li>
             <li>
-              <AnchorLink href='#contact' onClick={handleHamburgerToggle}>Contact</AnchorLink>
+              <AnchorLink href='#contact' onClick={() => { setHamburgerToggle(false) }}>Contact</AnchorLink>
             </li>
           </ul>
         </div>

@@ -17,10 +17,17 @@ class App extends React.Component {
       notificationType: '',
       notificationMessage: ''
     }
+    this.setHamburgerToggle = this.setHamburgerToggle.bind(this)
     this.setNotification = this.setNotification.bind(this)
     this.handleHamburgerToggle = this.handleHamburgerToggle.bind(this)
     this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this)
     this.handleNotificationDismiss = this.handleNotificationDismiss.bind(this)
+  }
+
+  setHamburgerToggle (toggle) {
+    this.setState(prevState => ({
+      hamburgerToggle: (typeof toggle === 'boolean') ? toggle : !prevState.hamburgerToggle
+    }))
   }
 
   setNotification (display, type, message) {
@@ -33,9 +40,7 @@ class App extends React.Component {
 
   handleHamburgerToggle (event) {
     event.preventDefault()
-    this.setState(prevState => ({
-      hamburgerToggle: !prevState.hamburgerToggle
-    }))
+    this.setHamburgerToggle()
   }
 
   handleContactFormSubmit (event) {
@@ -67,10 +72,10 @@ class App extends React.Component {
     })
   }
 
-
   handleNotificationDismiss (event) {
     event.preventDefault()
     this.setNotification(false, '', '')
+    window.clearTimeout(window.notificationTimeout)
   }
 
   render () {
@@ -79,7 +84,11 @@ class App extends React.Component {
     } = this.state
     return (
       <div id='app'>
-        <Nav hamburgerToggle={hamburgerToggle} handleHamburgerToggle={this.handleHamburgerToggle} />
+        <Nav
+          hamburgerToggle={hamburgerToggle}
+          setHamburgerToggle={this.setHamburgerToggle}
+          handleHamburgerToggle={this.handleHamburgerToggle}
+        />
         <Hello />
         <Portfolio portfolioData={portfolioData} />
         <Contact
