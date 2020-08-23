@@ -29,7 +29,7 @@ const Contact = (props) => {
         <div className='copyright'>
           <span role='img' aria-label='Copyright'>©️</span>
           {' '}
-          2019 Mustafa Temel
+          2020 Mustafa Temel
         </div>
       </div>
     </section>
