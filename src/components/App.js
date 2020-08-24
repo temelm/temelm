@@ -3,6 +3,7 @@ import Nav from './Nav'
 import Hello from './Hello'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import Footer from './Footer'
 import Notification from './Notification'
 
 import portfolioData from './portfolio-data'
@@ -95,6 +96,7 @@ class App extends React.Component {
           contactFormSubmitDisabled={contactFormSubmitDisabled}
           handleContactFormSubmit={this.handleContactFormSubmit}
         />
+        <Footer />
         {displayNotification && (
           <Notification
             type={notificationType}
