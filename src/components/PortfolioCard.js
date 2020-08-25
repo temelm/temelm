@@ -3,7 +3,7 @@ import Tech from './Tech'
 
 const PortfolioCard = (props) => {
   const {
-    url, logo, title, role, tech, isContract
+    url, logo, title, subTitle, date, role, tech
   } = props
   return (
     <div className='portfolio-card'>
@@ -16,10 +16,18 @@ const PortfolioCard = (props) => {
         <div className='portfolio-card-title'>
           <h2>
             {title}
-            {isContract && <span> (Contract)</span>}
+            {subTitle && (
+              <span>{' ('.concat(subTitle).concat(')')}</span>
+            )}
           </h2>
         </div>
         <div className='portfolio-card-details'>
+          <div className='portfolio-card-date'>
+            <h4>Date</h4>
+            <ul>
+              <li>{date}</li>
+            </ul>
+          </div>
           <div className='portfolio-card-role'>
             <h4>Role</h4>
             <ul>
