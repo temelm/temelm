@@ -5,7 +5,7 @@ $spacing20: 20px;
   background-color: $colorWhite;
   display: flex;
   flex-direction: column;
-  font-size: large;
+  font-size: medium;
   margin-bottom: $spacing20;
   max-width: $baseWidth;
 }
@@ -38,11 +38,18 @@ $spacing20: 20px;
 
 .portfolio-card-details {
   margin-bottom: $spacing10;
+
+  h4 {
+    margin-bottom: $spacingXs;
+    margin-top: $spacingXs;
+  }
 }
 
+.portfolio-card-date,
 .portfolio-card-role {
   ul {
     list-style-type: square;
+    margin: 0;
     padding-left: $spacing20;
   }
 }
@@ -109,7 +116,7 @@ $spacing20: 20px;
     display: flex;
     flex-grow: 1;
     max-width: 224px;
-    
+
     h2 {
       font-weight: 700;
     }
@@ -122,20 +129,16 @@ $spacing20: 20px;
     margin-bottom: 0;
   }
 
+  .portfolio-card-date {
+    flex-grow: 1;
+  }
+
   .portfolio-card-role {
     flex-grow: 1;
-
-    h4 {
-      margin-top: 0;
-    }
   }
 
   .portfolio-card-tech {
     flex-grow: 1;
-
-    h4 {
-      margin-top: 0;
-    }
   }
 
   .portfolio-card-cta {
