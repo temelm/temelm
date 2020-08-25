@@ -18,7 +18,7 @@ const portfolioData = [
     logo: tuClothing,
     date: 'May 2020 - Present',
     role: ['Digital Analytics Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'], /* @todo: REVIEW */
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
     isPrimary: true
   },
   {
@@ -28,7 +28,7 @@ const portfolioData = [
     logo: eurostar,
     date: 'November 2018 - April 2020',
     role: ['Digital Analytics Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['Google Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Argos',
@@ -36,7 +36,7 @@ const portfolioData = [
     logo: argos,
     date: 'August 2017 - November 2018',
     role: ['Digital Analytics Development', 'A/B Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript', 'React'] /* @todo: REVIEW */
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'React', 'HTML', 'CSS']
   },
   {
     title: 'John Lewis',
@@ -44,7 +44,7 @@ const portfolioData = [
     logo: johnLewis,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'British Airways',
@@ -52,7 +52,7 @@ const portfolioData = [
     logo: britishAirways,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'National Rail Enquiries',
@@ -60,7 +60,7 @@ const portfolioData = [
     logo: nationalRailEnquiries,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Ebuyer',
@@ -68,7 +68,7 @@ const portfolioData = [
     logo: ebuyer,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Energy Helpline',
@@ -76,7 +76,7 @@ const portfolioData = [
     logo: energyHelpline,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript', 'Angular'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'Angular', 'HTML', 'CSS']
   },
   {
     title: 'Heathrow Express',
@@ -84,7 +84,7 @@ const portfolioData = [
     logo: heathrowExpress,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Tealman',
@@ -93,7 +93,7 @@ const portfolioData = [
     logo: tealman,
     date: 'January 2019 - Present',
     role: ['Chrome DevTools Extension Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'tint',
@@ -102,7 +102,7 @@ const portfolioData = [
     logo: tint,
     date: 'December 2015 - August 2016',
     role: ['Hybrid Mobile App Development'],
-    tech: ['HTML', 'CSS', 'JavaScript'] /* @todo: REVIEW */
+    tech: ['Adobe PhoneGap', 'JavaScript', 'HTML', 'CSS']
   }
 ]
 

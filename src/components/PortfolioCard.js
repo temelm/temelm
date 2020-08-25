@@ -5,8 +5,13 @@ const PortfolioCard = (props) => {
   const {
     url, logo, title, subTitle, date, role, tech
   } = props
+  const isTealman = /kbppiimbnpoalogphgccdikkjhjolmfn/i.test(url)
+  let portfolioCardClass = 'portfolio-card'
+  if (isTealman) {
+    portfolioCardClass = [portfolioCardClass, portfolioCardClass.concat('-tealman')].join(' ')
+  }
   return (
-    <div className='portfolio-card'>
+    <div className={portfolioCardClass}>
       <div className='portfolio-card-logo'>
         <a href={url} target='blank' title='Opens in a new tab'>
           <img src={logo} alt={title} />

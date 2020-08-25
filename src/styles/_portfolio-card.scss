@@ -29,6 +29,8 @@ $spacing20: 20px;
 
 .portfolio-card-title {
   h2 {
+    margin-bottom: 0;
+
     span {
       font-size: small;
       opacity: 0.75;
@@ -40,7 +42,7 @@ $spacing20: 20px;
   margin-bottom: $spacing10;
 
   h4 {
-    margin-bottom: $spacingXs;
+    margin-bottom: calc(#{$spacingXs} * 0.75);
     margin-top: $spacingXs;
   }
 }
@@ -61,6 +63,7 @@ $spacing20: 20px;
 
 .tech {
   flex-grow: 1;
+  font-size: small;
   margin-bottom: $spacing10;
   width: 50%;
 
@@ -86,6 +89,20 @@ $spacing20: 20px;
     color: $colorWhite;
   }
 }
+
+/* begin tealman 🐵 patch */
+.portfolio-card.portfolio-card-tealman {
+  .portfolio-card-logo {
+    padding-bottom: $spacingXs;
+    padding-top: $spacingXs;
+
+    img {
+      max-width: calc(320px - #{$spacingXs});
+      width: calc(100% - #{$spacingXs});
+    }
+  }
+}
+/* end tealman 🐵 patch */
 
 @media screen and (min-width: $breakpointMd) {
   .portfolio-card {
