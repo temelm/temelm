@@ -8,12 +8,13 @@ $spacingSm: calc(#{$spacingXs} * 2);             /* 32px */
 $spacingMd: calc(#{$spacingXs} + #{$spacingSm}); /* 48px */
 $spacingLg: calc(#{$spacingXs} * 4);             /* 64px */
 
+$colorTemBackgroundLight: #f2f2f2;
 $colorTemFontDark: #333;
 $colorTemFormFieldBorder: #ccc;
 $colorTemTeal: #0d7e83;
 $colorWhite: #fff;
 
-$fontFamily: "Roboto", sans-serif;
+$fontFamily: 'Roboto', sans-serif;
 
 body {
   color: $colorTemFontDark;
@@ -80,4 +81,5 @@ h4 {
 @import './hello';
 @import './portfolio';
 @import './contact';
+@import './footer';
 @import './notification'
