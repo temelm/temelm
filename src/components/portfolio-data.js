@@ -16,7 +16,7 @@ const portfolioData = [
     subTitle: 'Contract',
     url: '//tuclothing.sainsburys.co.uk',
     logo: tuClothing,
-    date: 'May 2020 - Present',
+    date: 'May 2020 - September 2020',
     role: ['Digital Analytics Development'],
     tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
     isPrimary: true
