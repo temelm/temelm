@@ -15,7 +15,7 @@ $spacing20: 20px;
 }
 
 .portfolio-card-logo {
-  margin-bottom: -3px; /* 🐵 patch */
+  margin-bottom: -5px; /* 🐵 patch */
 
   img {
     width: 100%;
@@ -113,6 +113,10 @@ $spacing20: 20px;
 
   .portfolio-card:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  .portfolio-card.portfolio-card-argos .portfolio-card-body {
+    font-size: smaller;
   }
 
   .portfolio-card-logo {

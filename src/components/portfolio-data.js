@@ -6,25 +6,39 @@ import eurostar from '../images/eurostar.jpg'
 import heathrowExpress from '../images/heathrow-express.jpg'
 import johnLewis from '../images/john-lewis.gif'
 import nationalRailEnquiries from '../images/national-rail-enquiries.jpg'
+import sainsburys from '../images/sainsburys.jpg'
 import tealman from '../images/tealman.png'
 import tint from '../images/tint.png'
 import tuClothing from '../images/tu-clothing.jpeg'
 
 const portfolioData = [
   {
-    title: 'Tu Clothing',
-    subTitle: 'Contract',
-    url: '//tuclothing.sainsburys.co.uk',
-    logo: tuClothing,
-    date: 'May 2020 - October 2020',
+    title: 'Sainsbury\'s',
+    url: [
+      { text: 'Sainsbury\'s', href: '//www.sainsburys.co.uk' },
+      { text: 'Argos', href: '//www.argos.co.uk' },
+      { text: 'Tu Clothing', href: '//tuclothing.sainsburys.co.uk' },
+      { text: 'Habitat', href: '//www.habitat.co.uk' }
+    ],
+    logo: sainsburys,
+    date: 'October 2020 - Present',
     role: ['Digital Analytics Development'],
     tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
     isPrimary: true
   },
   {
+    title: 'Tu Clothing',
+    subTitle: 'Contract',
+    url: ['//tuclothing.sainsburys.co.uk'],
+    logo: tuClothing,
+    date: 'May 2020 - October 2020',
+    role: ['Digital Analytics Development'],
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS']
+  },
+  {
     title: 'Eurostar',
     subTitle: 'Contract',
-    url: '//www.eurostar.com',
+    url: ['//www.eurostar.com'],
     logo: eurostar,
     date: 'November 2018 - April 2020',
     role: ['Digital Analytics Development'],
@@ -32,15 +46,15 @@ const portfolioData = [
   },
   {
     title: 'Argos',
-    url: '//www.argos.co.uk',
+    url: ['//www.argos.co.uk'],
     logo: argos,
     date: 'August 2017 - November 2018',
     role: ['Digital Analytics Development', 'A/B Test Development'],
-    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'React', 'HTML', 'CSS']
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'John Lewis',
-    url: '//www.johnlewis.com',
+    url: ['//www.johnlewis.com'],
     logo: johnLewis,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
@@ -48,7 +62,7 @@ const portfolioData = [
   },
   {
     title: 'British Airways',
-    url: '//www.britishairways.com/travel/home/public/en_gb',
+    url: ['//www.britishairways.com/travel/home/public/en_gb/'],
     logo: britishAirways,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
@@ -56,7 +70,7 @@ const portfolioData = [
   },
   {
     title: 'National Rail Enquiries',
-    url: '//www.nationalrail.co.uk',
+    url: ['//www.nationalrail.co.uk'],
     logo: nationalRailEnquiries,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
@@ -64,7 +78,7 @@ const portfolioData = [
   },
   {
     title: 'Ebuyer',
-    url: '//www.ebuyer.com',
+    url: ['//www.ebuyer.com'],
     logo: ebuyer,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
@@ -72,15 +86,15 @@ const portfolioData = [
   },
   {
     title: 'Energy Helpline',
-    url: '//www.energyhelpline.com',
+    url: ['//www.energyhelpline.com'],
     logo: energyHelpline,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
-    tech: ['OpenText Optimost', 'JavaScript', 'Angular', 'HTML', 'CSS']
+    tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Heathrow Express',
-    url: '//www.heathrowexpress.com',
+    url: ['//www.heathrowexpress.com'],
     logo: heathrowExpress,
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
@@ -89,7 +103,7 @@ const portfolioData = [
   {
     title: 'Tealman',
     subTitle: 'Personal Project',
-    url: '//chrome.google.com/webstore/detail/tealman/kbppiimbnpoalogphgccdikkjhjolmfn',
+    url: ['//chrome.google.com/webstore/detail/tealman/kbppiimbnpoalogphgccdikkjhjolmfn'],
     logo: tealman,
     date: 'January 2019 - Present',
     role: ['Chrome DevTools Extension Development'],
@@ -98,7 +112,7 @@ const portfolioData = [
   {
     title: 'tint',
     subTitle: 'Personal Project',
-    url: '//play.google.com/store/apps/details?id=com.temelm.tint',
+    url: ['//play.google.com/store/apps/details?id=com.temelm.tint'],
     logo: tint,
     date: 'December 2015 - August 2016',
     role: ['Hybrid Mobile App Development'],
