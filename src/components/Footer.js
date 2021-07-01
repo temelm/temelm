@@ -19,7 +19,7 @@ const Footer = () => (
       <div className='copyright'>
         <span role='img' aria-label='Copyright'>©️</span>
         {' '}
-        2020 Mustafa Temel
+        2021 Mustafa Temel
       </div>
     </div>
   </section>
