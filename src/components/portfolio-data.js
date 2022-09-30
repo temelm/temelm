@@ -16,7 +16,7 @@ const portfolioData = [
     title: 'Sainsbury\'s',
     url: '//about.sainsburys.co.uk/#brans-with-copy-and-logo-wrapper',
     logo: sainsburys,
-    date: 'October 2022 - Present',
+    date: 'October 2020 - Present',
     role: ['Digital Analytics Development'],
     tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
     isPrimary: true
