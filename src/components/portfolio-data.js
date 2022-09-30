@@ -6,11 +6,21 @@ import eurostar from '../images/eurostar.jpg'
 import heathrowExpress from '../images/heathrow-express.jpg'
 import johnLewis from '../images/john-lewis.gif'
 import nationalRailEnquiries from '../images/national-rail-enquiries.jpg'
+import sainsburys from '../images/sainsburys.png'
 import tealman from '../images/tealman.png'
 import tint from '../images/tint.png'
 import tuClothing from '../images/tu-clothing.jpeg'
 
 const portfolioData = [
+  {
+    title: 'Sainsbury\'s',
+    url: '//about.sainsburys.co.uk/#brans-with-copy-and-logo-wrapper',
+    logo: sainsburys,
+    date: 'October 2022 - Present',
+    role: ['Digital Analytics Development'],
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
+    isPrimary: true
+  },
   {
     title: 'Tu Clothing',
     subTitle: 'Contract',
@@ -18,8 +28,7 @@ const portfolioData = [
     logo: tuClothing,
     date: 'May 2020 - October 2020',
     role: ['Digital Analytics Development'],
-    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
-    isPrimary: true
+    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Eurostar',
