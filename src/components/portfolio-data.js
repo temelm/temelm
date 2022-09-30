@@ -1,7 +1,6 @@
 import argos from '../images/argos.jpg'
 import britishAirways from '../images/british-airways.jpg'
 import ebuyer from '../images/ebuyer.jpg'
-import energyHelpline from '../images/energy-helpline.jpg'
 import eurostar from '../images/eurostar.jpg'
 import heathrowExpress from '../images/heathrow-express.jpg'
 import johnLewis from '../images/john-lewis.gif'
@@ -78,14 +77,6 @@ const portfolioData = [
     date: 'August 2013 - July 2017',
     role: ['A/B and Multivariate Test Development'],
     tech: ['OpenText Optimost', 'JavaScript', 'HTML', 'CSS']
-  },
-  {
-    title: 'Energy Helpline',
-    url: '//www.energyhelpline.com',
-    logo: energyHelpline,
-    date: 'August 2013 - July 2017',
-    role: ['A/B and Multivariate Test Development'],
-    tech: ['OpenText Optimost', 'JavaScript', 'Angular', 'HTML', 'CSS']
   },
   {
     title: 'Heathrow Express',
