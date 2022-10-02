@@ -17,7 +17,7 @@ const portfolioData = [
     logo: sainsburys,
     date: 'October 2020 - Present',
     role: ['Digital Analytics Development'],
-    tech: ['Adobe Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
+    tech: ['Adobe Analytics', 'Google Analytics', 'Tealium iQ', 'JavaScript', 'HTML', 'CSS'],
     isPrimary: true
   },
   {
